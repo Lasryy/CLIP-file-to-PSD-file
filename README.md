@@ -1,4 +1,4 @@
-# Clip Studio Paint .CLIP file to Photoshop .PSD file
+# Clip Studio Paint .CLIP File to Photoshop .PSD File
 
 **clip_to_psd** is a standalone Python script for converting Clip Studio Paint (.clip) files into editable Photoshop (.psd/psb) files. Unlike traditional export tools, it preserves advanced layer properties—including editable text, filter layers, gradients, and more—without relying on external software.  
 
@@ -24,23 +24,19 @@
 ## Requirements
 
 - **Python 3.6+** (Python 3.9 or later is recommended for full functionality)  
-- **Pillow (Optional)**: Required if you want PSD thumbnail previews or to export layers as PNG files.  
-  Install via:
-  ```bash
-  pip install Pillow
-  ```
+- **Pillow**
 - No other external dependencies are needed.
 
 ## Installation
 
 1. **Clone or Download the Repository**  
-   Fork and clone the repository to your local machine.
-   
+   Fork and clone the repository to your local machine.  
+   Original repository: [dobrokot/clip_to_psd](https://github.com/dobrokot/clip_to_psd/tree/main)
+
 2. **Ensure Python is Installed**  
    Verify that Python 3 is installed (use `python --version`).
 
-3. **(Optional) Install Pillow**  
-   If you wish to export image previews or individual layers as PNGs, install Pillow with:
+3. **Install Pillow**  
    ```bash
    pip install Pillow
    ```
@@ -71,24 +67,25 @@ Options include:
 
 ## Limitations
 
-- **Vector Layers**:  
+- **Vector Layers**  
   True vector layers are always rasterized if no pixel data is available. This is due to limitations in the .clip format itself.
 
-- **Advanced Effects**:  
+- **Advanced Effects**  
   Effects such as Color Balance, Posterization, Binarization, and Gradient Map are not supported.
 
-- **Animation Data**:  
+- **Animation Data**  
   Animation timelines and related data are not exported.
 
-- **External References**:  
+- **External References**  
   Any external file references are not included in the export.
 
-- **Compatibility Note**:  
+- **Compatibility Note**  
   Some exported layers (e.g., backgrounds defined as solid fill layers) may appear transparent or altered when reopened in Clip Studio Paint since CSP cannot interpret PSD vector or solid fill layers.
 
 ## Contributing
 
-Contributions, forks, and improvements are welcome! Feel free to open pull requests or issues if you have suggestions or fixes.
+Contributions, forks, and improvements are welcome!  
+In this fork, several corrections and improvements have been incorporated over the original project. Feel free to open pull requests or issues if you have suggestions or fixes.
 
 ## License
 
