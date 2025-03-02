@@ -1,7 +1,7 @@
 # Clip Studio Paint .CLIP file to Photoshop .PSD file
 
 **clip_to_psd** is a standalone Python script for converting Clip Studio Paint (.clip) files into editable Photoshop (.psd/psb) files. Unlike traditional export tools, it preserves advanced layer properties—including editable text, filter layers, gradients, and more—without relying on external software.  
-*(Français: clip_to_psd est un script Python autonome permettant de convertir des fichiers .clip de Clip Studio Paint en fichiers PSD/PSB éditables, tout en conservant des fonctionnalités avancées telles que les calques de texte modifiables, les calques de filtres, les dégradés, etc.)*
+*(FR: clip_to_psd est un script Python autonome permettant de convertir des fichiers .clip de Clip Studio Paint en fichiers PSD/PSB éditables, tout en conservant des fonctionnalités avancées telles que les calques de texte modifiables, les calques de filtres, les dégradés, etc.)*
 
 ## Features
 
