@@ -4,6 +4,8 @@
 
 *(FR: clip_to_psd est un script Python autonome permettant de convertir des fichiers .clip de Clip Studio Paint en fichiers PSD/PSB éditables, tout en conservant des fonctionnalités avancées telles que les calques de texte modifiables, les calques de filtres, les dégradés, etc.)*
 
+   Original repository: [dobrokot/clip_to_psd](https://github.com/dobrokot/clip_to_psd/tree/main)
+
 ## Features
 
 - **Comprehensive Layer Export**  
@@ -31,7 +33,6 @@
 
 1. **Clone or Download the Repository**  
    Fork and clone the repository to your local machine.  
-   Original repository: [dobrokot/clip_to_psd](https://github.com/dobrokot/clip_to_psd/tree/main)
 
 2. **Ensure Python is Installed**  
    Verify that Python 3 is installed (use `python --version`).
