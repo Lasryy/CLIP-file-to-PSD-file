@@ -210,7 +210,8 @@ def execute_query_global(conn, query, namedtuple_name = "X"):
     cursor = conn.cursor()
     cursor.execute(query)
     # get column names (nameduple forbids underscore '_' at start of name).
-    column_names = [description[0].removeprefix('_') for description in cursor.description]
+    column_names = [description[0][1:] if description[0].startswith('_') else description[0] for description in cursor.description]
+
     table_row_tuple_type = namedtuple(namedtuple_name, column_names)
     # Fetch all results and convert them to named tuples
 
@@ -258,7 +259,7 @@ def dump_database_chunk_links_structure_info(conn):
 
 
 def get_database_columns(conn):
-    tables = one_column(execute_query_global(conn, "SELECT name FROM sqlite_schema WHERE type == 'table' ORDER BY name"))
+    tables = one_column(execute_query_global(conn, "SELECT name FROM sqlite_master WHERE type == 'table' ORDER BY name"))
 
     table_columns = {}
     for t in tables:
